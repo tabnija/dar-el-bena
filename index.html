@@ -2,46 +2,253 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>دار البنة | أدرار</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#fff8f1;color:#3b2017}
-a{text-decoration:none;color:inherit}
-nav{height:70px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px #0002}
-.logo{font-size:27px;font-weight:900;color:#6b2b22}
-nav a{margin:0 12px;font-weight:bold}
-.order,.btn{background:#ed2161;color:white;padding:12px 23px;border-radius:28px;font-weight:bold;display:inline-block}
-.hero{min-height:470px;padding:55px 7%;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(110deg,#35140e,#702b19,#35140e);color:white}
-.hero h1{font-size:75px;margin:0 0 15px}
-.tag{display:inline-block;background:#ed2161;padding:12px 25px;border-radius:30px;font-size:24px;font-weight:bold}
-.hero p{font-size:22px}
-.food{font-size:170px}
-.features{display:flex;justify-content:space-around;text-align:center;padding:22px;background:#fff0e8;font-weight:bold}
-.feature{flex:1}.feature b{display:block;color:#ed2161;font-size:30px}
-section{padding:55px 6%}
-.title{text-align:center;font-size:38px;margin-bottom:10px}
-.sub{text-align:center;color:#76584d;margin-bottom:35px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.card{background:white;border-radius:22px;overflow:hidden;text-align:center;box-shadow:0 8px 25px #5b251522}
-.pic{height:230px;display:flex;align-items:center;justify-content:center;font-size:115px;background:linear-gradient(135deg,#ffe3d4,#fff7ef)}
-.card div:last-child{padding:22px}
-.card h3{font-size:28px;margin:0 0 8px}
-.card p{color:#76584d;min-height:48px}
-.info{background:#3a1a12;color:white;display:grid;grid-template-columns:repeat(4,1fr);gap:25px;text-align:center;padding:45px 6%}
-.info h3{color:#ff6d9b;font-size:22px}
-.wa{background:#16c75a;padding:12px 23px;border-radius:25px;display:inline-block;font-weight:bold}
-footer{text-align:center;background:#25100b;color:#ddd;padding:20px}
-@media(max-width:800px){
-nav a{display:none}
-.hero{flex-direction:column;text-align:center}
-.hero h1{font-size:55px}.food{font-size:100px}
-.cards{grid-template-columns:1fr}
-.features,.info{grid-template-columns:1fr 1fr}
+*{
+  box-sizing:border-box;
 }
+
+body{
+  margin:0;
+  font-family:Arial,Tahoma,sans-serif;
+  background:#fff8f1;
+  color:#3b2017;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+nav{
+  height:70px;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 6%;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 10px #0002;
+}
+
+.logo{
+  font-size:27px;
+  font-weight:900;
+  color:#6b2b22;
+}
+
+nav a{
+  margin:0 12px;
+  font-weight:bold;
+}
+
+.order,
+.btn{
+  background:#ed2161;
+  color:white;
+  padding:12px 23px;
+  border-radius:28px;
+  font-weight:bold;
+  display:inline-block;
+}
+
+.hero{
+  min-height:450px;
+  padding:55px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:linear-gradient(110deg,#35140e,#702b19,#35140e);
+  color:white;
+}
+
+.hero h1{
+  font-size:70px;
+  margin:0 0 15px;
+}
+
+.tag{
+  display:inline-block;
+  background:#ed2161;
+  padding:12px 25px;
+  border-radius:30px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.hero p{
+  font-size:22px;
+}
+
+.food{
+  font-size:150px;
+}
+
+.features{
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  padding:22px;
+  background:#fff0e8;
+  font-weight:bold;
+}
+
+.feature{
+  flex:1;
+}
+
+.feature b{
+  display:block;
+  color:#ed2161;
+  font-size:30px;
+}
+
+section{
+  padding:55px 6%;
+}
+
+.title{
+  text-align:center;
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.sub{
+  text-align:center;
+  color:#76584d;
+  margin-bottom:35px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.card{
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  text-align:center;
+  box-shadow:0 8px 25px #5b251522;
+}
+
+.pic{
+  height:400px;
+  background:#fff7ef;
+  overflow:hidden;
+}
+
+.pic img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.card-content{
+  padding:25px;
+}
+
+.card h3{
+  font-size:30px;
+  margin:0 0 10px;
+  color:#6b2b22;
+}
+
+.card p{
+  color:#76584d;
+  font-size:17px;
+}
+
+.price{
+  font-size:29px;
+  font-weight:900;
+  color:#ed2161;
+  margin:15px 0 20px;
+}
+
+.info{
+  background:#3a1a12;
+  color:white;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  text-align:center;
+  padding:45px 6%;
+}
+
+.info h3{
+  color:#ff6d9b;
+  font-size:22px;
+}
+
+.wa{
+  background:#16c75a;
+  padding:12px 23px;
+  border-radius:25px;
+  display:inline-block;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  background:#25100b;
+  color:#ddd;
+  padding:20px;
+}
+
+@media(max-width:800px){
+
+  nav a{
+    display:none;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:55px;
+  }
+
+  .food{
+    font-size:100px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .info{
+    grid-template-columns:1fr;
+  }
+}
+
 @media(max-width:500px){
-.features,.info{display:grid;grid-template-columns:1fr}
-.order{padding:9px 12px;font-size:12px}
+
+  .features{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .order{
+    padding:9px 12px;
+    font-size:12px;
+  }
+
+  .pic{
+    height:350px;
+  }
 }
 </style>
 </head>
@@ -49,92 +256,207 @@ nav a{display:none}
 <body>
 
 <nav>
-<div class="logo">دار البنة</div>
+
+<div class="logo">
+دار البنة
+</div>
+
 <div>
 <a href="#home">الرئيسية</a>
 <a href="#menu">المينيو</a>
 <a href="#contact">التواصل</a>
 </div>
-<a class="order" href="https://wa.me/213664643763">اطلب الآن</a>
+
+<a class="order" href="https://wa.me/213664643763">
+اطلب الآن
+</a>
+
 </nav>
 
+
 <section class="hero" id="home">
+
 <div>
-<h1>دار البنة</h1>
-<span class="tag">مذاق لا يُقاوم في كل قطعة</span>
-<p>🥞 كراب • 🍩 ميني دونات • 🧇 غوفر</p>
-<a class="order" href="https://wa.me/213664643763">اطلب عبر واتساب</a>
+
+<h1>
+دار البنة
+</h1>
+
+<span class="tag">
+مذاق لا يُقاوم في كل قطعة
+</span>
+
+<p>
+🥞 كراب لوتس • 🍓 كراب فروتا
+</p>
+
+<a class="order" href="https://wa.me/213664643763">
+اطلب عبر واتساب
+</a>
+
 </div>
-<div class="food">🥞</div>
+
+<div class="food">
+🥞
+</div>
+
 </section>
 
+
 <div class="features">
-<div class="feature"><b>♡</b>محضرة بكل حب</div>
-<div class="feature"><b>♨</b>مذاق مميز</div>
-<div class="feature"><b>✦</b>مكونات عالية الجودة</div>
+
+<div class="feature">
+<b>♡</b>
+محضرة بكل حب
 </div>
 
+<div class="feature">
+<b>♨</b>
+مذاق مميز
+</div>
+
+<div class="feature">
+<b>✦</b>
+مكونات عالية الجودة
+</div>
+
+</div>
+
+
 <section id="menu">
-<h2 class="title">منتجاتنا 💗</h2>
-<p class="sub">حلويات شهية محضرة بعناية في دار البنة</p>
+
+<h2 class="title">
+المينيو 💗
+</h2>
+
+<p class="sub">
+اختار الكراب لي يعجبك واطلب مباشرة عبر واتساب
+</p>
+
 
 <div class="cards">
 
-<div class="card">
-<div class="pic">🥞</div>
-<div>
-<h3>الكراب</h3>
-<p>كراب طري ومذاق لا يقاوم مع مختلف الإضافات.</p>
-<a class="btn" href="https://wa.me/213664643763?text=حاب%20نطلب%20كراب">اطلب الآن</a>
-</div>
-</div>
+
+<!-- LOTUS -->
 
 <div class="card">
-<div class="pic">🍩</div>
-<div>
-<h3>ميني دونات</h3>
-<p>ميني دونات خفيف ولذيذ بمختلف النكهات.</p>
-<a class="btn" href="https://wa.me/213664643763?text=حاب%20نطلب%20ميني%20دونات">اطلب الآن</a>
+
+<div class="pic">
+<img src="lotus.jpg" alt="Crêpe Lotus">
 </div>
+
+<div class="card-content">
+
+<h3>
+Crêpe Lotus
+</h3>
+
+<p>
+كراب لوتس لذيذ مع كريمة اللوتس وقطع البسكويت.
+</p>
+
+<div class="price">
+550 دج
 </div>
+
+<a class="btn"
+href="https://wa.me/213664643763?text=سلام،%20نحب%20نطلب%20Crêpe%20Lotus%20بسعر%20550%20دج">
+اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+
+<!-- FRUTTA -->
 
 <div class="card">
-<div class="pic">🧇</div>
-<div>
-<h3>الغوفر</h3>
-<p>غوفر مقرمش من الخارج وطري من الداخل.</p>
-<a class="btn" href="https://wa.me/213664643763?text=حاب%20نطلب%20غوفر">اطلب الآن</a>
+
+<div class="pic">
+<img src="frutta.jpg" alt="Frutta">
 </div>
+
+<div class="card-content">
+
+<h3>
+Frutta
+</h3>
+
+<p>
+كراب بالفواكه الطازجة والشوكولاتة وتزيين شهي.
+</p>
+
+<div class="price">
+600 دج
+</div>
+
+<a class="btn"
+href="https://wa.me/213664643763?text=سلام،%20نحب%20نطلب%20Frutta%20بسعر%20600%20دج">
+اطلب الآن
+</a>
+
 </div>
 
 </div>
+
+
+</div>
+
 </section>
+
 
 <section class="info" id="contact">
 
 <div>
-<h3>📍 موقعنا</h3>
-<p>أدرار - الجزائر</p>
-<p>دار البنة</p>
+
+<h3>
+📍 موقعنا
+</h3>
+
+<p>
+أدرار - الجزائر
+</p>
+
+<p>
+دار البنة
+</p>
+
 </div>
 
-<div>
-<h3>🕐 ساعات العمل</h3>
-<p>يومياً<br>08:00 صباحاً - 23:00 مساءً</p>
-</div>
 
 <div>
-<h3>☎ اتصل بنا</h3>
-<p>0664 64 37 63</p>
-<a class="wa" href="https://wa.me/213664643763">واتساب</a>
+
+<h3>
+☎ اتصل بنا
+</h3>
+
+<p>
+0664 64 37 63
+</p>
+
+<a class="wa"
+href="https://wa.me/213664643763">
+واتساب
+</a>
+
 </div>
 
+
 <div>
-<h3>♥ تابعنا</h3>
-<p>Facebook<br>Instagram<br>TikTok</p>
+
+<h3>
+♥ تابعنا
+</h3>
+
+<p>
+Facebook • Instagram • TikTok
+</p>
+
 </div>
 
 </section>
+
 
 <footer>
 © 2026 دار البنة - أدرار
